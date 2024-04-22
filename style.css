@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    height: 100svh;
+}
+.sectionOne {
+    width: 100%;
+    height: calc(100svh - 60px);
+    background: url(./images/cover.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sectionOne h1 {
+    color: rgb(255, 247, 0);
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 1.8px;
+}
+.sectionOne h3 {
+    width: 700px;
+    max-width: 100%;
+    color: rgb(194, 194, 194);
+    font-family: "Cairo", sans-serif;
+    line-height: 1.7;
+}
+.aboutUs, .ourServices {
+    background: rgb(6, 2, 23);
+    padding: 40px 0;
+    color: white;
+}
+.ourServices {
+    background: rgb(9, 3, 37);
+}
+.text {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.aboutUs .container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.aboutUs .container .image {
+    border-radius: 15px;
+overflow: hidden;
+
+}
+.aboutUs .container .image img {
+    width: 100%;
+}
+.aboutUs .container .info h2 {
+    font-size: 65px;
+    color: rgb(20, 98, 158);
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Jersey 25", sans-serif;
+
+}
+.aboutUs .container .info h3 {
+    direction: rtl;
+    font-family: "Tajawal", sans-serif;
+    font-weight: bold;
+    color: #fff700;
+    position: relative;
+    margin-bottom: 20px;
+}
+.aboutUs .container .info h3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+  
+    height: 3px;
+    background: #fff700;
+
+    left: 0;
+    bottom: -15px;
+}
+.aboutUs .container .info p {
+    direction: rtl;
+    font-family: "Tajawal", sans-serif;
+    line-height: 1.7;
+}
+@media (min-width: 901px) {
+    .aboutUs .container .image {
+        width: 50%;
+    }
+    .aboutUs .container .info {
+        width: 40%;
+    }
+}
+@media (max-width: 900px) {
+    .aboutUs .container {
+        flex-direction: column;
+    }
+    .aboutUs .container .image {
+        width: 100%;
+    }
+    .aboutUs .container .info {
+        width: 100%;
+    }
+
+}
+
+.ourServices h3 {
+    font-family: "Cairo", sans-serif;
+    font-weight: bold;
+    color: #1973b9;
+}
+.ourServices .container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 50px;
+}
+.ourServices .container .cards .card-o .image {
+    display: flex;
+    justify-content: center;
+}
+.ourServices .container .cards .card-o .image img {
+    width: 80%;
+}
+.ourServices .container .cards .card-o p {
+    font-family: "Tajawal", sans-serif;
+    font-size: 18px;
+
+}
+.ourServices .container .cards .card-o h4, .ourServices .container .cards .card-o p {
+    text-align: center;
+    margin-top: 20px;
+}
+.ourServices .container .cards .card-o h4 {
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    color: #fff700;
+}
+.srv {
+    position: relative;
+}
+.srv::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    background: #1973b9;
+    bottom: -10px;
+}
+
+.description {
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 15px; 
+    margin: 0;
+  }
+
+  footer {
+    background: #2d2d2d;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  
